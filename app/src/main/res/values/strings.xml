@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Save It</string>
+    <string name="get_saved_urls">get saved urls</string>
+    <string name="lets_save_it">Lets Save It</string>
 </resources>
