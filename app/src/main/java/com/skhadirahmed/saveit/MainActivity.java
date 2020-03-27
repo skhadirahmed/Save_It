@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         String sharedText = intent.getStringExtra(Intent.EXTRA_TEXT);
         if (sharedText != null) {
             // Update UI to reflect text being shared
-            Toast.makeText(this, sharedText, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, sharedText+"from rohit", Toast.LENGTH_SHORT).show();
             writeToFile(sharedText, this);
             finish();
         }
@@ -103,6 +103,8 @@ public class MainActivity extends AppCompatActivity {
             }
         } catch (FileNotFoundException e) {
             Log.e("login activity", "File not found: " + e.toString());
+            Log.e("login activity", "File not found : " + e.toString());
+
         } catch (IOException e) {
             Log.e("login activity", "Can not read file: " + e.toString());
         }
