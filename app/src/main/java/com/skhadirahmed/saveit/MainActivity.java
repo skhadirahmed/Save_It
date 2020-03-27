@@ -22,7 +22,6 @@ import java.io.OutputStreamWriter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mbutton;
     private TextView mTextView;
 
     @Override
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mbutton = findViewById(R.id.geturls);
+        Button mbutton = findViewById(R.id.geturls);
         mTextView = findViewById(R.id.textView);
         // Get intent, action and MIME type
         Intent intent = getIntent();
@@ -64,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         String sharedText = intent.getStringExtra(Intent.EXTRA_TEXT);
         if (sharedText != null) {
             // Update UI to reflect text being shared
-            Toast.makeText(this, sharedText+"from rohit", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, sharedText+"from khadir", Toast.LENGTH_SHORT).show();
             writeToFile(sharedText, this);
             finish();
         }
